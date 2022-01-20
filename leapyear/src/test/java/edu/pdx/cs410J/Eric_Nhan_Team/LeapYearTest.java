@@ -2,6 +2,9 @@ package edu.pdx.cs410J.Eric_Nhan_Team;
 
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 /**
  * Acceptance Criteria (Listed)
  * - All years divisible by 400 are leap years (ex year 2000)
@@ -16,5 +19,13 @@ public class LeapYearTest {
   void canInstantiateKataClass() {
     new LeapYear();
   }
+
+  @Test
+  void numberDivisibleBy400IsALeapYear(){
+    final int YEAR = 2000;
+    LeapYear leapYear = new LeapYear(YEAR);
+    assertThat("isLeapYear()", leapYear.isLeapYear(), equalTo(true));
+  }
+
 
 }
