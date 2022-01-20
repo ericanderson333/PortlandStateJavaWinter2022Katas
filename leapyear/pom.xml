@@ -28,7 +28,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.pdx.cs410J.Eric_Nhan_Team.Kata</mainClass>
+              <mainClass>edu.pdx.cs410J.Eric_Nhan_Team.LeapYear</mainClass>
             </manifest>
           </archive>
         </configuration>

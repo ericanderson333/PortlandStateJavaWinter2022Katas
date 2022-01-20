@@ -6,8 +6,8 @@ package edu.pdx.cs410J.Eric_Nhan_Team;
  * Use IntelliJ's "Refactor | Rename..." command to change the name of this
  * class (and its tests).
  */
-public class Kata {
-                                                                                    
+public class LeapYear {
+
 
   public static void main(String[] args) {
     System.err.println("Missing command line arguments");
