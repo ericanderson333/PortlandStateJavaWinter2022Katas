@@ -11,9 +11,15 @@ public class LeapYear {
   public LeapYear(){}
 
   public boolean isLeapYear(int year){
-    if(year % 400 == 0)
+    if (year % 400 == 0)
       return true;
-    return year % 100 != 0;
+    if (year % 100 == 0) {
+      return false;
+    }
+    if(year % 4 == 0){
+      return true;
+    }
+    return false;
   }
 
   public static void main(String[] args) {

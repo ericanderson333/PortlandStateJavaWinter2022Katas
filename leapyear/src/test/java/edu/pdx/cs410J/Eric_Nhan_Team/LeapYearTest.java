@@ -38,5 +38,19 @@ public class LeapYearTest {
     assertThat("isLeapYear()", leapYear.isLeapYear(YEAR), equalTo(false));
   }
 
+  @Test
+  void yearDivisibleBy4ButNotBy100AreLeapYears(){
+    final int YEAR = 2400;
+    LeapYear leapYear = getLeapYear();
+    assertThat("isLeapYear()", leapYear.isLeapYear(YEAR), equalTo(true));
+  }
+
+  @Test
+  void yearNotDivisibleBy4IsNotALeapYear(){
+    final int YEAR = 2401;
+    LeapYear leapYear = getLeapYear();
+    assertThat("isLeapYear()", leapYear.isLeapYear(YEAR), equalTo(false));
+  }
+
 
 }
