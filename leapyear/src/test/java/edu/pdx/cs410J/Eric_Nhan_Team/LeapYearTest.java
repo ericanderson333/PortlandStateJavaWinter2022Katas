@@ -15,6 +15,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
  */
 public class LeapYearTest {
 
+  private LeapYear getLeapYear(){
+    return new LeapYear();
+  }
+
   @Test
   void canInstantiateKataClass() {
     new LeapYear();
@@ -23,8 +27,15 @@ public class LeapYearTest {
   @Test
   void numberDivisibleBy400IsALeapYear(){
     final int YEAR = 2000;
-    LeapYear leapYear = new LeapYear(YEAR);
-    assertThat("isLeapYear()", leapYear.isLeapYear(), equalTo(true));
+    LeapYear leapYear = getLeapYear();
+    assertThat("isLeapYear()", leapYear.isLeapYear(YEAR), equalTo(true));
+  }
+
+  @Test
+  void yearDivisibleBy100AndNotBy400IsNotALeapYear(){
+    final int YEAR = 2100;
+    LeapYear leapYear = getLeapYear();
+    assertThat("isLeapYear()", leapYear.isLeapYear(YEAR), equalTo(false));
   }
 
 
