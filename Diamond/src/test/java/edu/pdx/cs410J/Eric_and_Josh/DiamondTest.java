@@ -9,5 +9,4 @@ public class DiamondTest
   void canInstantiateKataClass() {
     new Diamond();
   }
-
 }
