@@ -7,17 +7,17 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.StringContains.containsString;
 
-class KataIT extends InvokeMainTestCase {
+class DiamondIT extends InvokeMainTestCase {
 
   @Test
   void invokingMainWithNoArgumentsHasExitCodeOf1() {
-    InvokeMainTestCase.MainMethodResult result = invokeMain(Kata.class);
+    InvokeMainTestCase.MainMethodResult result = invokeMain(Diamond.class);
     assertThat(result.getExitCode(), equalTo(1));
   }
 
   @Test
   void invokingMainWithNoArgumentsPrintsMissingArgumentsToStandardError() {
-    InvokeMainTestCase.MainMethodResult result = invokeMain(Kata.class);
+    InvokeMainTestCase.MainMethodResult result = invokeMain(Diamond.class);
     assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
   }
 

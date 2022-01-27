@@ -28,7 +28,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.pdx.cs410J.Eric_and_Josh.Kata</mainClass>
+              <mainClass>edu.pdx.cs410J.Eric_and_Josh.Diamond</mainClass>
             </manifest>
           </archive>
         </configuration>

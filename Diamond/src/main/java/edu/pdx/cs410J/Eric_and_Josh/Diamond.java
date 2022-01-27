@@ -6,7 +6,7 @@ package edu.pdx.cs410J.Eric_and_Josh;
  * Use IntelliJ's "Refactor | Rename..." command to change the name of this
  * class (and its tests).
  */
-public class Kata {
+public class Diamond {
                                                                                     
 
   public static void main(String[] args) {
